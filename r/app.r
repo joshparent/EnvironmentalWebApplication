@@ -5,7 +5,7 @@ library(ggplot2)
 library(colorRamps)
 
 # Load Lake Data
-lakeData <- read.csv("./data/Cleaned_LongPond_08082024.csv")
+lakeData <- read.csv("./r/data/Cleaned_LongPond_08082024.csv")
 
 # Define UI
 ui <- fluidPage(
@@ -33,7 +33,7 @@ ui <- fluidPage(
     ),
     
     # Second tab
-    tabPanel("Tab 2", 
+    tabPanel("Tab 2",
              sidebarLayout(
                sidebarPanel(
                  selectInput(
@@ -139,6 +139,7 @@ server <- function(input, output) {
     if (input$graphSelect == "DO Plot") {
       ggplot(selectedData(), aes(x = date, y = Value, color = factor(meter))) +
         geom_point() +
+        scale_color_discrete() +
         labs(title = paste("DO Sensor at", input$doDepth, "Meters")) +
         scale_y_continuous(limits = c(min(doData$Value), max(doData$Value))) +
         labs(
@@ -147,7 +148,6 @@ server <- function(input, output) {
           color = "Meter"
         ) +
         theme_bw()
-
     } else if (input$graphSelect == "Heatmap") {
       ggplot(selectedData(), aes(x = date, y = meter, fill = Value)) +
         geom_raster(interpolate = T) +
@@ -167,6 +167,7 @@ server <- function(input, output) {
     } else if (input$graphSelect == "Heat Scatterplot") {
       ggplot(selectedData(), aes(x = date, y = Value, color = factor(meter))) +
         geom_point() +
+        scale_color_discrete() +
         labs(title = paste("DO Sensor at", input$meter, "Meters")) +
         labs(
           x = "",
