@@ -10,7 +10,7 @@ export default function App() {
                 <NavbarContent className="hidden sm:flex gap-4" justify="center">
                     <NavbarItem isActive>
                         <Link href="#" aria-current="page">
-                            Graphs
+                            <strong>Graphs</strong>
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
