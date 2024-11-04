@@ -2585,7 +2585,7 @@ video {
 .will-change-transform {
   will-change: transform;
 }
-:root,.light,[data-theme="light"] {
+.light,[data-theme="light"] {
   color-scheme: light;
   --nextui-background: 0 0% 100%;
   --nextui-foreground-50: 0 0% 98.04%;
@@ -2823,9 +2823,9 @@ video {
   --nextui-box-shadow-large: 0px 0px 30px 0px rgb(0 0 0 / 0.07), 0px 30px 60px 0px rgb(0 0 0 / 0.26), inset 0px 0px 1px 0px rgb(255 255 255 / 0.15);
   --nextui-hover-opacity: .9;
 }
-.custom,[data-theme="custom"] {
-  --nextui-background: 198.89999999999998 92.41% 84.51%;
-  --nextui-foreground: 0 0% 0%;
+:root,.custom,[data-theme="custom"] {
+  --nextui-background: 240 3.83% 46.08%;
+  --nextui-foreground: 0 0% 100%;
   --nextui-divider: 0 0% 6.67%;
   --nextui-divider-opacity: 0.15;
   --nextui-focus: 0 0% 100%;
@@ -2861,7 +2861,7 @@ video {
   --nextui-primary-800: 211.84000000000003 100% 19.22%;
   --nextui-primary-900: 211.84000000000003 100% 9.61%;
   --nextui-primary-foreground: 198.86 68.63% 70%;
-  --nextui-primary: 201.15999999999997 98.1% 41.37%;
+  --nextui-primary: 145.96000000000004 79.46% 43.92%;
   --nextui-secondary-50: 270 61.54% 94.9%;
   --nextui-secondary-100: 270 59.26% 89.41%;
   --nextui-secondary-200: 270 59.26% 78.82%;

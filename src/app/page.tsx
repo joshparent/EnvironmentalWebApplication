@@ -15,22 +15,22 @@ export default function App() {
                     </NavbarItem>
                     <NavbarItem>
                         <Link color="foreground" href="#">
-                            Tutorial
+                            Data
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
                         <Link color="foreground" href="#">
-                            About Research
+                            Project Overview
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
                         <Link color="foreground" href="#">
-                            Research Location
+                            Study Site
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
                         <Link color="foreground" href="#">
-                            About Team
+                            Research Team
                         </Link>
                     </NavbarItem>
                 </NavbarContent>
