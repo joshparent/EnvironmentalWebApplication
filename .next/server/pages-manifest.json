@@ -2,7 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/data": "pages/data.js",
   "/": "pages/index.js",
+  "/project-overview": "pages/project-overview.js",
   "/study-site": "pages/study-site.js",
-  "/data": "pages/data.js"
+  "/research-team": "pages/research-team.js"
 }
